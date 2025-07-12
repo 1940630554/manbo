@@ -1,0 +1,37 @@
+identity:
+  name: json2excel_enhanced
+  author: local_user
+  label:
+    en_US: Enhanced Json to Excel
+    zh_Hans: 增强版Json转Excel
+description:
+  human:
+    en_US: Convert Json to Excel with improved data validation and error handling.
+    zh_Hans: 将Json转换为Excel，具有改进的数据验证和错误处理功能。
+  llm: Convert Json to Excel with enhanced data validation.
+parameters:
+  - name: json_data
+    type: string
+    required: true
+    label:
+      en_US: JSON Data
+      zh_Hans: JSON数据
+    human_description:
+      en_US: Input JSON string (array of objects).
+      zh_Hans: 输入的JSON字符串（对象数组）.
+    llm_description: Input JSON string to convert to Excel format.
+    form: llm
+  - name: filename
+    type: string
+    required: false
+    label:
+      en_US: Output Filename
+      zh_Hans: 输出文件名
+    human_description:
+      en_US: Output Excel filename (without extension).
+      zh_Hans: 输出Excel文件名（不含扩展名）.
+    llm_description: Output Excel filename without extension.
+    form: llm
+extra:
+  python:
+    source: tools/json2excel_enhanced.py 

@@ -1,0 +1,19 @@
+identity:
+  author: local_user
+  name: excel_converter_enhanced
+  label:
+    en_US: Enhanced Excel Converter
+    zh_Hans: 增强版Excel转换器
+  description:
+    en_US: An enhanced tool to convert Excel to Json and vice versa with improved file handling.
+    zh_Hans: 一个增强版的Excel与Json转换工具，具有改进的文件处理功能。
+  icon: icon.svg
+  tags:
+    - productivity
+    - utilities
+extra:
+  python:
+    source: provider/excel_converter.py
+tools:
+  - tools/excel2json_enhanced.yaml
+  - tools/json2excel_enhanced.yaml 

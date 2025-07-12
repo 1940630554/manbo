@@ -1,0 +1,26 @@
+identity:
+  name: excel2json_enhanced
+  author: local_user
+  label:
+    en_US: Enhanced Excel to Json
+    zh_Hans: 增强版Excel转Json
+description:
+  human:
+    en_US: Convert Excel to Json with improved file handling and error recovery.
+    zh_Hans: 将Excel转换为Json，具有改进的文件处理和错误恢复功能。
+  llm: Convert Excel to Json with enhanced error handling.
+parameters:
+  - name: file
+    type: file
+    required: true
+    label:
+      en_US: Excel File
+      zh_Hans: Excel文件
+    human_description:
+      en_US: Upload Excel file (.xlsx, .xls).
+      zh_Hans: 上传Excel文件 (.xlsx, .xls).
+    llm_description: Upload Excel file for conversion to JSON.
+    form: llm
+extra:
+  python:
+    source: tools/excel2json_enhanced.py 
